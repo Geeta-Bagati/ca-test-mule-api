@@ -4,7 +4,7 @@
 
 	<groupId>2385fb97-2d71-407b-8317-da132cdbbd10</groupId>
 	<artifactId>ca-test-mule-api</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<packaging>mule-application</packaging>
 
 	<name>ca-test-mule-api</name>
@@ -13,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.7</app.runtime>
+		<app.runtime>4.7.1</app.runtime>
 		<mule.maven.plugin.version>4.2.0</mule.maven.plugin.version>
 	</properties>
 
@@ -40,7 +40,7 @@
 						<provider>MC</provider>
 						<environment>${env}</environment>
 						<target>${targetName}</target>
-						<muleVersion>4.7-java8</muleVersion>
+						<muleVersion>4.7.1</muleVersion>
 						<server>anypoint-exchange-v3-ca1</server>
 						<applicationName>${app.name}</applicationName>
 						<replicas>${replicas}</replicas>

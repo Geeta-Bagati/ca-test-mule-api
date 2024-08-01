@@ -15,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.7.0</app.runtime>
+		<app.runtime>4.6.5</app.runtime>
 		<mule.maven.plugin.version>4.2.0</mule.maven.plugin.version>
 	</properties>
 
@@ -32,12 +32,17 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<!-- <cloudHubDeployment> <uri>https://ca1.platform.mulesoft.com</uri> 
+						<muleVersion>4.6-java8</muleVersion> <server>anypoint-exchange-v3-ca1</server> 
+						<environment>Sandbox</environment> <applicationName>ca-test-mule-api</applicationName> 
+						<region>ca-central-1</region> <workers>1</workers> <workerType>MICRO</workerType> 
+						<objectStoreV2>true</objectStoreV2> </cloudHubDeployment> -->
 					<cloudhub2Deployment>
 						<uri>https://ca1.platform.mulesoft.com</uri>
 						<provider>MC</provider>
 						<environment>Sandbox</environment>
 						<target>Cloudhub-CA-Central-1</target>
-						<muleVersion>${app.runtime}</muleVersion>
+						<muleVersion>4.6-java8</muleVersion>
 						<server>anypoint-exchange-v3-ca1</server>
 						<applicationName>ca-test-mule-api</applicationName>
 						<replicas>1</replicas>

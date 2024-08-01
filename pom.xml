@@ -40,13 +40,13 @@
 					<cloudhub2Deployment>
 						<uri>https://ca1.platform.mulesoft.com</uri>
 						<provider>MC</provider>
-						<environment>Sandbox</environment>
-						<target>Cloudhub-CA-Central-1</target>
+						<environment>${env}</environment>
+						<target>${targetName}</target>
 						<muleVersion>4.6-java8</muleVersion>
 						<server>anypoint-exchange-v3-ca1</server>
-						<applicationName>ca-test-mule-api</applicationName>
-						<replicas>1</replicas>
-						<vCores>1</vCores>
+						<applicationName>${app.name}</applicationName>
+						<replicas>${replicas}</replicas>
+						<vCores>${vCores}</vCores>
 						<deploymentSettings>
 							<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
 						</deploymentSettings>

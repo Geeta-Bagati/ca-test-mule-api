@@ -4,7 +4,7 @@
 
 	<groupId>2385fb97-2d71-407b-8317-da132cdbbd10</groupId>
 	<artifactId>ca-test-mule-api</artifactId>
-	<version>1.0.8</version>
+	<version>1.0.9</version>
 	<packaging>mule-application</packaging>
 
 	<name>ca-test-mule-api</name>
@@ -51,7 +51,7 @@
 						<integrations>
 							<services>
 								<objectStoreV2>
-									<enabled>true</enabled>
+									<enabled>false</enabled>
 								</objectStoreV2>
 							</services>
 						</integrations>

@@ -16,7 +16,7 @@ pipeline
    
    stage('Deploy Application to cloudHub 2.0'){
    steps{
-   bat 'mvn clean deploy -DmuleDeploy -Denv=%ENV% -DtargetName=%TARGET_NAME% -Dapp.name=%APP_NAME% -Dreplicas=%REPLICAS% -DvCores=%VCORES%'
+   bat 'mvn clean deploy -DmuleDeploy -X -Denv=%ENV% -DtargetName=%TARGET_NAME% -Dapp.name=%APP_NAME% -Dreplicas=%REPLICAS% -DvCores=%VCORES%'
    }
    }
   }

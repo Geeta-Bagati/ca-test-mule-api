@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>2385fb97-2d71-407b-8317-da132cdbbd10</groupId>
 	<artifactId>ca-test-mule-api</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>ca-test-mule-api</name>
@@ -15,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.6.5</app.runtime>
+		<app.runtime>4.7.0</app.runtime>
 		<mule.maven.plugin.version>4.2.0</mule.maven.plugin.version>
 	</properties>
 
@@ -42,7 +40,7 @@
 						<provider>MC</provider>
 						<environment>${env}</environment>
 						<target>${targetName}</target>
-						<muleVersion>4.6-java8</muleVersion>
+						<muleVersion>4.7-java8</muleVersion>
 						<server>anypoint-exchange-v3-ca1</server>
 						<applicationName>${app.name}</applicationName>
 						<replicas>${replicas}</replicas>
@@ -99,6 +97,12 @@
 			<id>mulesoft-releases</id>
 			<name>MuleSoft Releases Repository</name>
 			<url>https://repository.mulesoft.org/releases/</url>
+			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>anypoint-exchange-v3</id>
+			<name>Anypoint Exchange V3</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
 			<layout>default</layout>
 		</repository>
 	</repositories>

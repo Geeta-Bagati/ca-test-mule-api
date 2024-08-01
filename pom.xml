@@ -4,7 +4,7 @@
 
 	<groupId>2385fb97-2d71-407b-8317-da132cdbbd10</groupId>
 	<artifactId>ca-test-mule-api</artifactId>
-	<version>1.0.6</version>
+	<version>1.0.7</version>
 	<packaging>mule-application</packaging>
 
 	<name>ca-test-mule-api</name>
@@ -40,7 +40,7 @@
 						<provider>MC</provider>
 						<environment>${env}</environment>
 						<target>${targetName}</target>
-						<muleVersion>4.7.1</muleVersion>
+						<muleVersion>4.7.1:5e-java8</muleVersion>
 						<server>anypoint-exchange-v3-ca1</server>
 						<applicationName>${app.name}</applicationName>
 						<replicas>${replicas}</replicas>

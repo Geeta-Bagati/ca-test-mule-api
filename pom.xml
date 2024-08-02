@@ -6,7 +6,7 @@
 
 	<groupId>2385fb97-2d71-407b-8317-da132cdbbd10</groupId>
 	<artifactId>ca-test-mule-api</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
 
 	<name>ca-test-mule-api</name>
@@ -47,6 +47,12 @@
 						<applicationName>${app.name}</applicationName>
 						<replicas>${replicas}</replicas>
 						<vCores>${vCores}</vCores>
+						<properties>
+							<anypoint.platform.analytics_base_uri>https://analytics-ingest.ca1.platform.mulesoft.com</anypoint.platform.analytics_base_uri>
+							<anypoint.platform.client_id>e0bd35274c4d41e997f43034f2ebc55a</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>a7BB657Bc67c490e8038e80417c1FbbF</anypoint.platform.client_secret>
+							<anypoint.platform.base_uri>https://ca1.platform.mulesoft.com</anypoint.platform.base_uri>
+						</properties>
 						<deploymentSettings>
 							<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
 						</deploymentSettings>
